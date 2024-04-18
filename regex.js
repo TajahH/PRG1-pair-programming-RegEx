@@ -48,3 +48,9 @@ console.log(checkHeight())
 // // Other regex methods do exist such as match() (which looks for matching
 // // characters) and replace() (which replaces characters), but test is 
 // // probably the most commonly used and the one you should use here.
+
+let all3Checker = [
+    {
+        age: checkAge()
+    }
+]
