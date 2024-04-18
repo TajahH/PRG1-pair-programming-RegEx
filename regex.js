@@ -20,7 +20,7 @@ function checkFirstName(){
 }
 
 }
-console.log(checkFirstName())
+// console.log(checkFirstName())
 
 
 function checkAge(){
@@ -32,7 +32,7 @@ function checkAge(){
 }
 
 }
-console.log(checkAge())
+// console.log(checkAge())
 
 function checkHeight(){
     let heightInput = readline.question("What is your height?: ")
@@ -43,7 +43,7 @@ function checkHeight(){
 }
 
 }
-console.log(checkHeight())
+// console.log(checkHeight())
 
 // // Other regex methods do exist such as match() (which looks for matching
 // // characters) and replace() (which replaces characters), but test is 
@@ -51,6 +51,15 @@ console.log(checkHeight())
 
 let all3Checker = [
     {
+        name: checkFirstName()
+    },
+    {
         age: checkAge()
+    },
+    {
+        height: checkHeight()
     }
 ]
+for (let i = 0; i < all3Checker.length; i++){
+    return all3Checker[i]
+}
